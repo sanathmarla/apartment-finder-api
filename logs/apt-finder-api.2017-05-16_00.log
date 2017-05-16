@@ -1,0 +1,2 @@
+{"@message":"Successfully connect to Mongo DB mongodb://mongoadmin:mongolab123@ds137891.mlab.com:37891/aptfinder","@timestamp":"2017-05-16T00:31:34.581Z","@fields":{"level":"info"}}
+{"@message":"Successfully connect to Mongo DB mongodb://mongoadmin:mongolab123@ds137891.mlab.com:37891/aptfinder","@timestamp":"2017-05-16T00:32:18.633Z","@fields":{"level":"info"}}
