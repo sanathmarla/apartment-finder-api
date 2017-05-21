@@ -1,9 +1,9 @@
 'use strict';
 
-const mongojs = require('mongojs');
+const dbClient = require('mongoose');
 const config = require('./config.js');
 
-var mongoDb = {
+var db = {
     conn: null
 };
 
@@ -14,13 +14,11 @@ module.exports = {
 
 function connect(url) {
     return new Promise((resolve, reject) => {
-        mongoDb.conn = mongojs(
-            url
-        );
-        resolve(mongoDb.conn);
+        db.conn = dbClient.connect(url);
+        resolve(db.conn);
     });
 }
 
 function get() {
-    return mongoDb.conn;
+    return db.conn;
 }
